@@ -1,0 +1,29 @@
+{
+  "name": "countries",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "turbo run build",
+    "prepare": "npm run build",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "eslint src/ --ext .ts --fix",
+    "test": "turbo run test"
+  },
+  "keywords": [],
+  "author": "Amit Talole",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.5",
+    "tslint-config-prettier": "^1.18.0",
+    "turbo": "^1.8.8",
+    "typescript": "^5.3.3"
+  },
+  "devEngines": {
+    "node": ">=18"
+  }
+}
